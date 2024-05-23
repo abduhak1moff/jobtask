@@ -11,8 +11,8 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  margin-right: 120px;
-  margin-left: 120px;
+  /* margin-right: 120px;
+  margin-left: 120px; */
 }
 
 body,
@@ -52,7 +52,7 @@ html {
 }
 
 .scroll-content {
-  height: 200vh; /* sahifani skroll qilish uchun yetarlicha uzunlik */
+  height: 200vh;
 }
 /* ! Header */
 header {
@@ -60,9 +60,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(247, 236, 236, 0.8); /* arkalik rangi */
-  z-index: 1000; /* qarshilik indeksi */
-  transition: background-color 0.3s ease; /* orqa to'g'ri */
+  background-color: rgba(247, 236, 236, 0.8);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
 }
 
 .logoImg {
@@ -163,7 +163,6 @@ nav-logo .nav-links li a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  /* background-color: #101010; */
   background-color: #fff;
 }
 
@@ -212,5 +211,128 @@ nav-logo .nav-links li a {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* ! herroWrapper */
+
+.herroWrapper {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 40px;
+  justify-content: center;
+}
+
+.herroInfo {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: start;
+}
+
+.herroInfo h1 {
+  color: rgb(15, 15, 15);
+  font-family: Noto Sans;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: start;
+}
+
+.herroInfo p {
+  color: rgb(8, 8, 8);
+  font-family: Noto Sans;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: start;
+}
+
+.herroBtn {
+  display: flex;
+  gap: 20px;
+}
+
+.herroBtn button {
+  border-radius: 5px;
+
+  /* Shadow Primary */
+  box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);
+  /* Linear Buttons Bright Green */
+  background: linear-gradient(
+      133.53deg,
+      rgba(67, 151, 164, 0.2) 0.884%,
+      rgba(91, 204, 222, 0.2) 99.887%
+    ),
+    rgb(67, 151, 164);
+
+  color: rgb(244, 247, 255);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  transition: all 0.7s ease;
+  cursor: pointer;
+}
+.herroBtn button:hover {
+  background: rgb(141, 212, 223);
+}
+@media only screen and (max-width: 768px) {
+  .herroWrapper {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .herroInfo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .herroInfo h1 {
+    color: rgb(15, 15, 15);
+    font-family: Noto Sans;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .herroInfo p {
+    color: rgb(8, 8, 8);
+    font-family: Noto Sans;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .herroImg {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .herroImg img {
+    margin: 0 auto;
+    width: 100%;
   }
 }
