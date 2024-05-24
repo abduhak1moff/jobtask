@@ -336,3 +336,300 @@ nav-logo .nav-links li a {
     width: 100%;
   }
 }
+
+/*  ! next section */
+.innovative {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.innovative h1 {
+  color: rgb(20, 20, 20);
+  font-family: Noto Sans;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.card {
+  /* Card */
+  position: static;
+  width: 366.67px;
+  height: 304px;
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  margin: 0px 20px;
+  transition: all 0.7s ease;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 30px;
+  transition: all 0.7s ease;
+}
+
+.logos img {
+  transition: all 0.7s ease;
+}
+.logos img:hover {
+  transform: scale(1.2);
+}
+
+.logoInfo {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  gap: 30px;
+}
+
+.infoNextSection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+  justify-content: center;
+}
+
+.infoNextSection span {
+  color: rgb(91, 204, 222);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.infoNextSection h2 {
+  color: rgb(224, 229, 230);
+  font-family: Noto Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.infoNextSection p {
+  color: rgb(216, 231, 233);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.infoNextSection button {
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+  border: none;
+  /* Shadow main */
+  box-shadow: 0px 30px 60px 0px rgba(59, 130, 246, 0.25);
+  /* Linear Buttons Bright Green */
+  background: linear-gradient(
+      133.53deg,
+      rgba(67, 151, 164, 0.2) 0.263%,
+      rgba(91, 204, 222, 0.2) 99.966%
+    ),
+    rgb(67, 151, 164);
+  color: rgb(244, 247, 255);
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .logoInfo {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .infoNextSection span {
+      text-align: center;
+      margin: 0 auto;
+      font-size: 36px;
+    }
+
+    .infoNextSection h2 {
+      text-align: center;
+    }
+
+    .infoNextSection p {
+      text-align: center;
+    }
+
+    .infoNextSection button {
+      width: 100%;
+    }
+  }
+}
+
+/*!  contactSection */
+
+.contactSection {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+}
+
+.contactInfo span {
+  color: rgb(91, 204, 222);
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.contactInfo h1 {
+  color: rgb(239, 246, 247);
+  font-family: Noto Sans;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.lineOne {
+  display: flex;
+  gap: 20px;
+}
+.lineOne label {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+}
+
+.lineOne label input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.subjectElement {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+}
+
+.subjectElement input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  width: 100%;
+}
+
+.message textarea {
+  padding: 30;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 60px;
+}
+
+.contactInfo button {
+  width: 100%;
+  background: rgb(67, 151, 164);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+}
+footer {
+  margin-top: 100px;
+  padding: 20px;
+}
+footer h1 {
+  color: #fff;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+  text-align: center;
+}
