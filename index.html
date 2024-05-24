@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video Fonli Sayt</title>
-    <!-- <link rel="stylesheet" href="./css/main.css" /> -->
-
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -21,12 +19,8 @@
       <nav class="navbar">
         <a href="#" class="logo"><span class="logoImg"></span>Buildit</a>
         <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
           <li class="nav-item">
             <a href="#logo" class="nav-link">Projects</a>
           </li>
@@ -46,12 +40,10 @@
       <section class="herroWrapper" id="home">
         <div class="herroInfo">
           <h1>Development company</h1>
-
           <p>
             Forward-thinking real estate developer, owner <br />
             and investor with a reputation
           </p>
-
           <div class="herroBtn">
             <button>Service</button>
             <button>About the company</button>
@@ -64,23 +56,19 @@
 
       <section id="about" class="innovative container">
         <h1>Innovative Execution</h1>
-
         <div class="cards">
           <div class="card">
             <img src="./assets/images/Icon.png" alt="" />
-
             <h2>Featured Listing</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div class="card">
             <img src="./assets/images/Icon.png" alt="" />
-
             <h2>Featured Listing</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div class="card">
             <img src="./assets/images/Icon.png" alt="" />
-
             <h2>Featured Listing</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
@@ -95,7 +83,6 @@
           <img src="./assets/images/logo4.png" alt="" />
           <img src="./assets/images/logo5.png" alt="" />
         </div>
-
         <div class="logoInfo">
           <div class="infoImgNext">
             <img src="./assets/images/infoLogo.png" alt="" />
@@ -103,7 +90,6 @@
           <div class="infoNextSection">
             <span>About us</span>
             <h2>Owner and investor with a reputation</h2>
-
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit
               sem, vestibulum sed leo eu, malesuada pharetra mauris. Integer
@@ -112,7 +98,6 @@
               Cras hendrerit molestie sapien sed fermentum. Mauris dui tortor,
               viverra vel ultrices in, congue sed ex.
             </p>
-
             <button>Explore</button>
           </div>
         </div>
@@ -121,54 +106,29 @@
       <section id="contact" class="container contactSection">
         <div class="contactInfo">
           <span>Contact </span>
-
           <h1>Get In Touch</h1>
-
           <div class="contactCards">
             <div class="contactCard">
               <img src="./assets/images/phone.png" alt="" />
-              <p>
-                Tel:
-                <span>708-790-0000</span>
-              </p>
+              <p>Tel: <span>708-790-0000</span></p>
             </div>
             <div class="contactCard">
               <img src="./assets/images/email.png" alt="" />
-              <p>
-                Email:
-                <span>bakhtiyarvich@gamil.com</span>
-              </p>
+              <p>Email: <span>bakhtiyarvich@gamil.com</span></p>
             </div>
             <div class="contactCard">
               <img src="./assets/images/email.png" alt="" />
-              <p>
-                Location:
-                <span>Tashkent/Yashnabad</span>
-              </p>
+              <p>Location: <span>Tashkent/Yashnabad</span></p>
             </div>
           </div>
         </div>
-
         <div class="contactInfo">
           <div class="lineOne">
-            <label>
-              Name
-              <input type="text" />
-            </label>
-            <label>
-              Email
-              <input type="text" />
-            </label>
+            <label>Name <input type="text" /></label>
+            <label>Email <input type="text" /></label>
           </div>
-          <label class="subjectElement">
-            Subject
-            <input type="text" />
-          </label>
-
-          <label class="message">
-            Message
-            <textarea></textarea>
-          </label>
+          <label class="subjectElement">Subject <input type="text" /></label>
+          <label class="message">Message <textarea></textarea></label>
           <button>Send message</button>
         </div>
       </section>
@@ -176,11 +136,17 @@
 
     <footer>
       <h1>Made by Azizbek Abduhakimov</h1>
-
       <p>Tashkent / Yashnabad 2024</p>
     </footer>
-    <!-- <div class="scroll-content"></div> -->
-
     <script src="./js/index.js"></script>
+    <script>
+      document.addEventListener("scroll", () => {
+        const video = document.getElementById("background-video");
+        video.playbackRate = 3; // Speed up the video
+        setTimeout(() => {
+          video.playbackRate = 1; // Reset to normal speed after 5 seconds
+        }, 5000);
+      });
+    </script>
   </body>
 </html>
